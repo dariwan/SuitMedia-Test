@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.first.FirstScreenActivity"
+    android:background="@drawable/background_1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="186dp"/>
+
+    <com.dariwan.suitmediatestapk.view.custom.EditTextCustom
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="51dp"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.dariwan.suitmediatestapk.view.custom.EditTextCustom
+        android:id="@+id/ed_polindrome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppinsmedium"
+        android:hint="Polindrome"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/ed_name"
+        tools:layout_editor_absoluteX="32dp" />
+
+    <com.dariwan.suitmediatestapk.view.custom.ButtonCustom
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="45dp"
+        android:text="check"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/ed_polindrome"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <com.dariwan.suitmediatestapk.view.custom.ButtonCustom
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="15dp"
+        android:text="next"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/btn_check"
+        tools:layout_editor_absoluteX="48dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
